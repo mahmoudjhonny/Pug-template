@@ -1,0 +1,27 @@
+- var form = 'form';
+- var list = 'list';
+- var name = 'name';
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title PUG Template
+    //- include keyword for import some file inside my code
+    include includes/styles.pug
+  body
+    div
+      h2 My Skills
+      ul(class = list)
+        li HTML5
+        li CSS3
+        li JS
+        li PUG.JS
+      p I Love
+        b JS
+        |  And 
+        strong PHP
+      form(method='POST',class=form)
+        input(type='text',name='name',class=name)
+        button(type='submit') submit
+        button(type='reset') reset
+    include includes/scripts.pug
