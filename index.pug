@@ -16,6 +16,16 @@ html(lang='en')
         li CSS3
         li JS
         li PUG.JS
+      //- Can use For loop in pug like js syntax
+      - for (var i = 1; i <= 20; i++)
+        div= i++
+      |
+      |
+      br
+      //- Can use For loop with array in pug like js syntax
+      - var arr = [1,2,3,4,5,6,7,8,9,10]
+      - for (var x = 1; x <= arr.length; x++)
+        div x
       p I Love
         b JS
         |  And 
@@ -24,4 +34,5 @@ html(lang='en')
         input(type='text',name='name',class=name)
         button(type='submit') submit
         button(type='reset') reset
+    //- include keyword for import some file inside my code
     include includes/scripts.pug
